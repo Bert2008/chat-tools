@@ -1,0 +1,37 @@
+
+<div id="chat">
+    <div class="sidebar">
+        <div class="m-card">
+            <header>
+                <img class="avatar" width="40" height="40" alt="Coffce" src="dist/images/1.jpg">
+                <p class="name" ng-bind="userInfo.nickName"></p>
+            </header>
+            <footer><input class="search" placeholder="search user..."></footer>
+        </div><!--v-component-->
+        <div class="m-list">
+            <ul><!--v-for-start-->
+                <li  ng-repeat="item in userList" ng-class="item.className" ng-click="event.switchToSay(item._id)">
+                    <img class="avatar" width="30" height="30" alt="webpack" src="dist/images/3.jpg"><p class="name" ng-bind="item.nickName"></p>
+                </li>
+            </ul>
+        </div><!--v-component-->
+    </div>
+    <div class="main">
+        <div ng-show="chatBoxShow" class="chatBoxShow">
+        <div class="chat-title">你正在和<span ng-bind="currentChating.nickName"></span>对话。</div>
+        <div class="m-message">
+            <ul id="chaMsgList"><!--v-for-start-->
+                <li>
+                    <p class="time"><span>11:37</span></p>
+                    <div class="textItem">
+                        <img class="avatar" width="30" height="30" src="dist/images/2.png">
+                        <div class="text">Hello，这是一个基于Vue + Webpack构建的简单chat示例，聊天记录保存在localStorge。简单演示了Vue的基础特性和webpack配置。</div>
+                    </div>
+                </li>
+            </ul>
+        </div><!--v-component-->
+        <div class="m-text"><textarea placeholder="按 Enter 发送" ng-keyup="event.sendMsg($event)" ng-model="msg.sendMsg"></textarea></div><!--v-component-->
+        </div>
+    </div>
+
+    </div>

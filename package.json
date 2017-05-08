@@ -1,0 +1,24 @@
+{
+  "name": "shoutbox",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "assert": "*",
+    "underscore": "1.8.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "ejs": "*",
+    "morgan": "*",
+    "socket.io": "*",
+    "express": "~4.14.1",
+    "mongodb ": "*",
+    "serve-favicon": "~2.3.2"
+  },
+  "devDependencies": {
+    "domain": "0.0.1"
+  }
+}

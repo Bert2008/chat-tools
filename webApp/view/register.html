@@ -1,0 +1,23 @@
+<div class="zhuce_body">
+    <div class="logo"></div>
+    <div class="zhuce_kong">
+        <div class="zc">
+            <div class="bj_bai">
+                <h3>欢迎注册</h3>
+                <form >
+                    <input  type="text" ng-model="userInfo.nickName" class="kuang_txt phone" placeholder="昵称">
+                    <input  type="number" ng-model="userInfo.telephone" class="kuang_txt email" placeholder="手机号">
+                    <input  type="text" ng-model="userInfo.password" class="kuang_txt possword" placeholder="密码">
+                    <input name="注册" ng-click="event.submitRegister()" type="button"  class="btn_zhuce" value="注册">
+
+                </form>
+            </div>
+            <div class="bj_right">
+                <p>已有账号？<a ui-sref="login">立即登录</a></p>
+
+            </div>
+        </div>
+        <P>你好欢迎注册</P>
+    </div>
+
+</div>
